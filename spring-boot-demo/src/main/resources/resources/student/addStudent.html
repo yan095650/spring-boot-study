@@ -1,0 +1,14 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add a user</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+    <h3>Add a student</h3>
+    <form method="post" action="/student/save">
+        <label>name:</label><br/>
+        <input name="name" cols="80" rows="5"/><br/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>

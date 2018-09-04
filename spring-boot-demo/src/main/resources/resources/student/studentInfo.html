@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <title>Student Info</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+    <h2>Student Info</h2>
+    <div>
+        <dt class="userBaseInfo">
+            <span th:text="${vo.id}">Id</span>
+            <span th:text="${vo.name}">Name</span>
+        </dt>
+    </div>
+    <hr/>
+</body>
+</html>

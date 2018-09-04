@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h2>二维码登录确认页面</h2>
+<form method="post" action="/user/loginByQRCode">
+    <table>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>token：</td>
+            <td><input name="token" th:value="${token}" ></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">登录</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

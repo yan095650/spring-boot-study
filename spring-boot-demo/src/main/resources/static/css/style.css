@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(165, 204, 170, 0.8);
+    font-family: arial, helvetica, sans-serif;
+}
+
+.userBaseInfo {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}

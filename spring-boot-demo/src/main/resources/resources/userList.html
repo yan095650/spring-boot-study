@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <title>User List</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+    <h2>Your User List</h2>
+    <div th:unless="${#lists.isEmpty(userList)}">
+        <dl th:each="user:${userList}">
+            <dt class="userBaseInfo">
+                <span th:text="${user.userName}">userName</span>
+                <span th:text="${user.mobile}">mobile</span>
+                <span th:text="${user.email}">email</span>
+            </dt>
+        </dl>
+    </div>
+    <div th:if="${#lists.isEmpty(userList)}">
+        <p>You have no users in your user list</p>
+    </div>
+    <hr/>
+    <a href="toPage/save">save</a>
+</body>
+</html>
